@@ -4,8 +4,8 @@ public class PrintTriangularSquares {
 	public static void main(String[] args) {
 		long i = 0;
         while(true) {
-            if(isTriangleNumber(i) && isPerfectSquare(i))
-                 System.out.print(i + ", ");
+            if(isPerfectSquare((i*i + i)/2))
+                 System.out.print((i*i + i)/2  + ", ");
             i++;
         }
 	}
